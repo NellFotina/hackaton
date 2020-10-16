@@ -1,0 +1,9 @@
+.container {
+    
+    display: block;
+}
+.line {
+    display: inline-block;
+    height: 40%;
+    width: 40%;
+}
