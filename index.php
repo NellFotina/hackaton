@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="Assets/Chart.min.css" />
 </head>
 <body>
-<div>
+<div class="center">
 <h3>Подходящие вакансии</h3>
 <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="GET">
     <label>Выберите навык: 
@@ -18,7 +18,7 @@
         <option value="web">web</option>
         <option value="copywriter">copywriter</option>
         </select>
-    </label><br />
+    </label><br /><br />
     <input type="submit" value="Подходящие вакансии" />
 </form>
 
@@ -28,11 +28,9 @@ if(isset($_GET['skill'])){
     $skill=$_GET['skill'];
     if($skill=='web'){
         echo '<h3>web</h3>';
-        echo file_get_contents("http://localhost/hackaton/JS/index.php?skill=web");
-    }
+     }
     else if($skill=='copywriter'){
         echo '<h3>copywriter</h3>';
-        echo file_get_contents("http://localhost/hackaton/JS/index.php?skill=copywriter");
     }
 } else {
     echo "Select an optional";
