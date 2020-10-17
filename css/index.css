@@ -4,11 +4,13 @@
 }
 .line {
     display: inline-block;
-    height: 40%;
-    width: 40%;
+    height: 30%;
+    width: 30%;
+    font-size: 30px;
 }
 .center {
     text-align: center;
     display: block;
     margin: 0 auto;
+    font-size: 30px;
 }

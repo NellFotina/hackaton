@@ -37,7 +37,7 @@ if(isset($_GET['skill'])){
 }
 ?>
 <section>
-        <div class="container">
+        <div class="container, center">
             <div class="line">
                 <canvas id="votesChart" width="600" height="400"></canvas>
             </div>
